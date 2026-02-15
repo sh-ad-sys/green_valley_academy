@@ -1,0 +1,140 @@
+/* =========================
+   PAGE CONTAINER
+========================= */
+.galleryPage {
+  font-family: "Inter", sans-serif;
+  background: #f9fafb;
+  color: #1f2937;
+  padding-bottom: 4rem;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.galleryHero {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.galleryHero h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.galleryHero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+}
+
+/* =========================
+   FILTER BUTTONS
+========================= */
+.filterContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 3rem 0;
+}
+
+.filterButton {
+  padding: 0.7rem 1.8rem;
+  border-radius: 9999px;
+  border: 1px solid #2563eb;
+  background: white;
+  color: #2563eb;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.filterButton:hover {
+  background: #2563eb;
+  color: white;
+}
+
+.filterButton.active {
+  background: linear-gradient(to right, #1e3a8a, #2563eb);
+  color: white;
+  border: none;
+}
+
+/* =========================
+   GALLERY GRID
+========================= */
+.galleryGrid {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+/* =========================
+   GALLERY CARD
+========================= */
+.galleryCard {
+  position: relative;
+  overflow: hidden;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: transform 0.4s ease;
+  height: 260px; /* Important for fill */
+}
+
+.galleryImage {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.galleryCard:hover .galleryImage {
+  transform: scale(1.1);
+}
+
+
+/* =========================
+   OVERLAY
+========================= */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1.5rem;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.galleryCard:hover .overlay {
+  opacity: 1;
+}
+
+.overlay h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.overlay p {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  opacity: 0.85;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .galleryHero h1 {
+    font-size: 2.5rem;
+  }
+
+  .galleryCard img {
+    height: 220px;
+  }
+}

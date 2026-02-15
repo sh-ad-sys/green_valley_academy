@@ -1,0 +1,136 @@
+.performancePage {
+  font-family: 'Inter', sans-serif;
+  color: #1a202c;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* ================= HERO ================= */
+.performanceHero {
+  position: relative;
+  background-color: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 6rem 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* ================= HIGHLIGHTS ================= */
+.performanceSection {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin-bottom: 2rem;
+}
+
+.highlightGrid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+.highlightCard {
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.highlightCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.highlightCard h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4f46e5;
+  margin-bottom: 0.5rem;
+}
+
+/* ================= STUDENT STATISTICS ================= */
+.performanceStats {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.statsGrid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+
+.statCard {
+  background: #e0e7ff;
+  padding: 2rem;
+  border-radius: 1rem;
+  font-weight: 600;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.statCard h3 {
+  font-size: 2rem;
+  color: #4f46e5;
+  margin-bottom: 0.5rem;
+}
+
+.statCard p {
+  font-size: 1rem;
+  color: #1a202c;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (min-width: 768px) {
+  .highlightGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .statsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .highlightGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .statsGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

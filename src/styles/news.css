@@ -1,0 +1,190 @@
+/* =========================
+   GLOBAL CONTAINER
+========================= */
+.newsContainer {
+  font-family: "Inter", "Segoe UI", sans-serif;
+  color: #1f2937;
+  background-color: #f9fafb;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.heroSection {
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+  padding: 100px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.heroSection h1 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: -1px;
+}
+
+.heroSection p {
+  font-size: 18px;
+  opacity: 0.9;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* =========================
+   SECTION STYLING
+========================= */
+.section,
+.sectionAlt {
+  padding: 90px 20px;
+}
+
+.section {
+  background: #ffffff;
+}
+
+.sectionAlt {
+  background: #f3f6fb;
+}
+
+.section h2,
+.sectionAlt h2 {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  color: #1e3a8a;
+  position: relative;
+}
+
+.section h2::after,
+.sectionAlt h2::after {
+  content: "";
+  width: 70px;
+  height: 4px;
+  background: #2563eb;
+  display: block;
+  margin: 12px auto 0;
+  border-radius: 4px;
+}
+
+/* =========================
+   CARD GRID
+========================= */
+.cardGrid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 35px;
+}
+
+/* =========================
+   CARD DESIGN
+========================= */
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.06);
+  transition: all 0.35s ease;
+  border: 1px solid #eef2f7;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 55px rgba(37, 99, 235, 0.15);
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+  color: #2563eb;
+}
+
+.card p {
+  line-height: 1.6;
+  color: #4b5563;
+}
+
+/* =========================
+   ANNOUNCEMENTS
+========================= */
+.listContainer {
+  max-width: 850px;
+  margin: auto;
+}
+
+.listItem {
+  background: white;
+  padding: 20px 25px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  border-left: 6px solid #2563eb;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+  transition: all 0.3s ease;
+  font-size: 16px;
+}
+
+.listItem:hover {
+  transform: translateX(8px);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.12);
+}
+
+/* =========================
+   TERM TABLE
+========================= */
+.termTable {
+  max-width: 750px;
+  margin: auto;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
+}
+
+.termRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 22px 30px;
+  border-bottom: 1px solid #f1f5f9;
+  transition: background 0.3s ease;
+}
+
+.termRow:hover {
+  background-color: #f8fbff;
+}
+
+.termRow:last-child {
+  border-bottom: none;
+}
+
+.termRow span:first-child {
+  font-weight: 600;
+  color: #1e3a8a;
+}
+
+.termRow span:last-child {
+  color: #4b5563;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+@media (max-width: 768px) {
+  .heroSection h1 {
+    font-size: 36px;
+  }
+
+  .section h2,
+  .sectionAlt h2 {
+    font-size: 26px;
+  }
+
+  .termRow {
+    flex-direction: column;
+    gap: 6px;
+  }
+}

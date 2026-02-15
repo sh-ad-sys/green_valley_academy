@@ -1,0 +1,130 @@
+.aboutPage {
+  font-family: 'Inter', sans-serif;
+  color: #1a202c;
+  line-height: 1.7;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Page header (replaces hero image) */
+.aboutPageHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.aboutPageTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1e3a8a; /* accent color */
+}
+
+.aboutPageSubtitle {
+  font-size: 1.5rem;
+  color: #4b5563;
+  margin-top: 0.5rem;
+}
+
+/* Sections */
+.aboutSection {
+  padding: 3rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.bg-graySection {
+  background-color: #f9fafb;
+  border-radius: 1rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #1e3a8a;
+}
+
+.sectionText {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: justify;
+}
+
+/* Core values list */
+.valuesList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.valuesList li {
+  background: #4f46e5;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.valuesList li:hover {
+  transform: translateY(-4px) scale(1.05);
+  background: #6366f1;
+}
+
+/* Principal’s message layout */
+.principalSection .principalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.principalSection .principalImage {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 1rem;
+  border: 4px solid #4f46e5;
+}
+
+.principalSection .principalText {
+  max-width: 700px;
+  text-align: justify;
+  font-size: 1rem;
+  color: #1a202c;
+}
+
+/* Responsive layout for principal */
+@media (min-width: 768px) {
+  .principalSection .principalContainer {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .principalSection .principalImage {
+    flex-shrink: 0;
+  }
+
+  .principalSection .principalText {
+    margin-left: 2rem;
+  }
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .aboutPageTitle {
+    font-size: 4rem;
+  }
+
+  .aboutPageSubtitle {
+    font-size: 1.75rem;
+  }
+
+  .sectionText {
+    font-size: 1.125rem;
+  }
+}

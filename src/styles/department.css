@@ -1,0 +1,99 @@
+.departmentPage {
+  font-family: 'Inter', sans-serif;
+  color: #1a202c;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* ================= HERO ================= */
+.departmentHero {
+  text-align: center;
+  padding: 5rem 1rem;
+  background-color: #1e3a8a;
+  color: white;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.departmentHero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.departmentHero p {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+/* ================= HOD MESSAGE ================= */
+.hodMessageSection {
+  padding: 2rem 0;
+}
+
+.hodContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hodImageWrapper {
+  flex: 0 0 auto;
+}
+
+.hodImage {
+  border-radius: 1rem;
+  object-fit: cover;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+  width: 350px;
+  height: 400px;
+}
+
+.hodMessageContent {
+  flex: 1 1 auto;
+}
+
+.hodMessageContent h2 {
+  font-size: 2rem;
+  color: #4f46e5;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.hodMessageContent p {
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+  color: #1a202c;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (min-width: 768px) {
+  .hodContainer {
+    flex-direction: row;
+    gap: 3rem;
+    align-items: flex-start;
+  }
+
+  .hodImageWrapper {
+    flex: 0 0 250px;
+  }
+
+  .hodMessageContent {
+    flex: 1;
+  }
+
+  .hodMessageContent h2 {
+    font-size: 2.2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .departmentHero h1 {
+    font-size: 3.5rem;
+  }
+
+  .departmentHero p {
+    font-size: 1.7rem;
+  }
+}

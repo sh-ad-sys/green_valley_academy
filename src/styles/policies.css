@@ -1,0 +1,76 @@
+.policiesPage {
+  font-family: 'Inter', sans-serif;
+  color: #1a202c;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* ================= HERO ================= */
+.policiesHero {
+  text-align: center;
+  padding: 6rem 1rem;
+  background-color: #1e3a8a;
+  color: white;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+}
+
+.policiesHero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.policiesHero p {
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+/* ================= POLICIES GRID ================= */
+.policiesSection {
+  text-align: center;
+}
+
+.policiesGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.policyCard {
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.policyCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.policyCard h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4f46e5;
+  margin-bottom: 0.5rem;
+}
+
+.policyCard p {
+  font-size: 1rem;
+  color: #1a202c;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (min-width: 768px) {
+  .policiesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .policiesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

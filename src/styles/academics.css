@@ -1,0 +1,138 @@
+/* ...existing styles remain unchanged... */
+.academicsPage {
+  font-family: 'Inter', sans-serif;
+  color: #1a202c;
+  line-height: 1.7;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Page header */
+.academicsHeader {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.academicsTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
+.academicsSubtitle {
+  font-size: 1.5rem;
+  color: #4b5563;
+  margin-top: 0.5rem;
+   text-align: center;
+}
+
+/* Sections */
+.academicsSection {
+  padding: 3rem 1rem;
+  margin-bottom: 2rem;
+}
+
+.bg-graySection {
+  background-color: #f9fafb;
+  border-radius: 1rem;
+}
+
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #1e3a8a;
+}
+
+.sectionText {
+  font-size: 1rem;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 1rem;
+}
+
+/* Lists styling */
+.subjectsList,
+.departmentsList,
+.activitiesList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+   text-align: center;
+  justify-content: center;
+}
+
+.subjectsList li,
+.departmentsList li,
+.activitiesList li {
+  background: #4f46e5;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+  font-weight: 500;
+   
+   text-align: center;
+  font-size: 0.95rem;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.subjectsList li:hover,
+.departmentsList li:hover,
+.activitiesList li:hover {
+  transform: translateY(-4px) scale(1.05);
+  background: #6366f1;
+}
+
+/* Responsive adjustments */
+@media (min-width: 768px) {
+  .academicsTitle {
+    font-size: 4rem;
+  }
+
+  .academicsSubtitle {
+    font-size: 1.75rem;
+  }
+
+  .sectionText {
+    font-size: 1.125rem;
+  }
+}
+
+/* Make departments and activities clickable */
+.departmentsList li,
+.activitiesList li {
+  background: #4f46e5;
+  color: white;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.75rem;
+   text-align: center;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.departmentsList li a,
+.activitiesList li a {
+  color: white;
+  text-decoration: none;
+  display: block; /* fills the pill */
+}
+
+.departmentsList li:hover,
+.activitiesList li:hover {
+  transform: translateY(-4px) scale(1.05);
+  background: #6366f1;
+}
+
+/* Responsive layout */
+@media (min-width: 768px) {
+  .subjectsList,
+  .departmentsList,
+  .activitiesList {
+    justify-content: flex-start;
+  }
+}

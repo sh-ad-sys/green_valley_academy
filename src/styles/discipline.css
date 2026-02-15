@@ -1,0 +1,131 @@
+.disciplinePage {
+  font-family: 'Inter', sans-serif;
+  color: #1a202c;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* ================= HERO ================= */
+.disciplineHero {
+  position: relative;
+  background-color: #1e3a8a;
+  color: white;
+  text-align: center;
+  padding: 6rem 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.heroOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.heroContent {
+  position: relative;
+  text-align: center;
+  z-index: 2;
+}
+
+.heroTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+/* ================= SECTIONS ================= */
+.sectionTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #1e3a8a;
+}
+
+.sectionText {
+  font-size: 1.125rem;
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* ================= PRINCIPLES GRID ================= */
+.principlesGrid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+  margin-top: 2rem;
+}
+
+.principleCard {
+  background: #f9fafb;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+}
+
+.principleCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+}
+
+.principleCard h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #4f46e5;
+  margin-bottom: 0.75rem;
+}
+
+/* ================= PROGRAMS ================= */
+.disciplinePrograms {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.programList {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: 0.75rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.programList li {
+  background: #e0e7ff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: transform 0.3s ease;
+}
+
+.programList li:hover {
+  transform: translateY(-2px);
+  background: #c7d2fe;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (min-width: 768px) {
+  .principlesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .principlesGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
