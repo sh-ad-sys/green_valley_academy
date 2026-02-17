@@ -16,7 +16,7 @@ export default function Footer() {
           </p>
           <p className="footerText">
             123 Main Street, Nairobi, Kenya<br/>
-            Email: info@greenvalley.ac.ke<br/>
+            Email: info@greenvalleyacademy.ac.ke<br/>
             Phone: +254 700 123 456
           </p>
           <div className="footerSocials">

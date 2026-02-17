@@ -9,7 +9,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   // Principal email
-  const principalEmail = "john.mwangi@greenvalley.ac.ke";
+  const principalEmail = "info@greenvalleyacademy.ac.ke";
 
   return (
     <header className="navbar">

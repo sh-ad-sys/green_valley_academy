@@ -1,0 +1,96 @@
+/* ================= HIGHLIGHTS SECTION ================= */
+.welcomeSection {
+  background: linear-gradient(135deg, #f0f4ff 0%, #ffffff 100%);
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.welcomeSection .welcomeTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.welcomeSection .welcomeTitle::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #4f46e5; /* accent underline */
+  margin: 0.5rem auto 0;
+  border-radius: 2px;
+}
+
+/* Grid wrapper */
+.cardGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+  padding: 0 1rem;
+}
+
+/* Card styling */
+.cardGrid > a, .cardGrid > div {
+  background: #ffffff;
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  width: 100%;
+  max-width: 280px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none; /* remove underline for links */
+}
+
+/* Hover effect for clickable cards */
+.cardGrid > a:hover, .cardGrid > div:hover {
+  transform: translateY(-8px) scale(1.05);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+  background: #f9faff; /* subtle background change on hover */
+}
+
+/* Icon container */
+.iconWrapper {
+  height: 80px;
+  width: 80px;
+  margin: 0 auto 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #4f46e5, #6366f1);
+  color: white;
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+}
+
+/* Optional: scale icon slightly on card hover */
+.cardGrid > a:hover .iconWrapper,
+.cardGrid > div:hover .iconWrapper {
+  transform: scale(1.1);
+}
+
+/* Card title */
+.cardGrid > a h3,
+.cardGrid > div h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1a202c;
+  margin-top: 0.5rem;
+}
+
+/* Optional card description */
+.cardGrid > a p,
+.cardGrid > div p {
+  font-size: 0.95rem;
+  color: #4b5563;
+  margin-top: 0.5rem;
+}
